@@ -73,7 +73,7 @@ class Func_GUI(Func_plot):
         self.after_id = None
         self.running = False
         self.setlen = 5
-     
+        self.master.after(10, self.run)
 
 
     def draw(self):  
@@ -97,7 +97,6 @@ class Func_GUI(Func_plot):
 
     def start(self):
         self.running = True
-        self.run()
 
 
     def stop(self):
@@ -130,19 +129,8 @@ class Func_GUI(Func_plot):
 
 root = tk.Tk()
 plot_gui = Func_GUI(root)
-root.after(1000,plot_gui.run)
 root.mainloop()
 
-
-#button.pack()
-#fig = Figure(figsize=(5,4),dpi=100)
-#p = func_plot(func)
-#p.plot((-10,10))
-
-# Assume that this list gets updated automatically
-
-
-# create event handle
 
 
 
