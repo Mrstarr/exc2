@@ -5,7 +5,7 @@ import math
 '''
 some gui lib
 '''
-from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg,NavigationToolbar2TkAgg)
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.backend_bases import key_press_handler
 from matplotlib.figure import Figure
 
